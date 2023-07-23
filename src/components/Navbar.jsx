@@ -52,12 +52,12 @@ const Navbar = () => {
             ))}
         </ul>
 
-        <div onClick={()=> setNav(!nav)} className= {scrollPosition>0? 'cursor-pointer pr-4 z-10 text-b1 md:hidden' : 'cursor-pointer pr-4 z-10 text-cyan md:hidden'}>
-            {nav? <FaTimes size={30}/>: <FaBars size={30}/>}
+        <div onClick={()=> setNav(!nav)} className= {scrollPosition>0? 'cursor-pointer pr-4 z-10 md:hidden' : 'cursor-pointer pr-4 z-10 text-cyan md:hidden'}>
+            {nav? <FaTimes size={30} color='#334F72'/>: <FaBars size={30}/>}
         </div>
 
         {nav && (
-            <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-b1 to-b2 text-cyan'>
+            <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-cyan text-blue-950'>
             {links.map((link)=>(
                     <li
                     key={link.id} 
