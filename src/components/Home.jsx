@@ -3,6 +3,9 @@ import {AiOutlineDownload} from 'react-icons/ai';
 import HeroImage from "../assets/heroimg.jpg";
 import { Link } from "react-scroll";
 import resume from "../assets/resume.pdf"
+import {BiLogoGmail} from 'react-icons/bi';
+import {AiFillLinkedin} from 'react-icons/ai';
+import {AiFillGithub} from 'react-icons/ai';
 
 const downloadResume = () => {
   window.open(resume, '_blank');
@@ -22,6 +25,11 @@ const Home = () => {
           <h3 className="py-4 sm:text-xl text-blue-50">
             Programmer | Developer
           </h3>
+          <div className="flex flex-row gap-3 mb-2 items-center">
+            <a href="mailto:dharmipatel567@gmail.com" target="_blank"><BiLogoGmail size="30px" className='shadow-lg rounded p-1 text-red-500 bg-cyan'/></a>
+            <a href="https://www.linkedin.com/in/dharmi-kapadiya/" target="_blank"><AiFillLinkedin size="30px" className='shadow-lg rounded p-1 text-blue-700 bg-cyan'/></a>
+            <a href="https://github.com/Dharmi26" target="_blank"><AiFillGithub size="30px" className='shadow-lg rounded p-1 text-black bg-cyan'/></a>
+          </div>
           <div>
             <Link
               to="portfolio"
