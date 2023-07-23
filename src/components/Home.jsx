@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="w-full pt-28 md:pt-0 h-screen bg-gradient-to-b from-b1 to-b2"
+      className="w-full pt-40 pb-32 bg-gradient-to-b from-b1 to-b2"
     >
       <div className=" max-w-screen-lg mx-auto flex flex-col-reverse md:flex-row items-center justify-center h-full px-4">
         <div className="flex flex-col justify-center h-full pt-6">
@@ -23,7 +23,7 @@ const Home = () => {
             Hi, I am Dharmi Kapadiya
           </h2>
           <h3 className="py-4 sm:text-xl text-blue-50">
-            Programmer | Developer
+            Programmer | Web Developer
           </h3>
           <div className="flex flex-row gap-3 mb-2 items-center">
             <a href="mailto:dharmipatel567@gmail.com" target="_blank"><BiLogoGmail size="30px" className='shadow-lg rounded p-1 text-red-500 bg-cyan'/></a>

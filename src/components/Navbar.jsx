@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa';
+import { useScrollPosition } from './useScrollPosition';
+import logo from '../assets/logo.png';
+import logo2 from '../assets/logo2.png';
 
 const Navbar = () => {
 
@@ -28,23 +31,28 @@ const Navbar = () => {
 
    const [nav,setNav] = useState(false);
 
+   const scrollPosition = useScrollPosition();
+
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-b from-b2 to-b1 fixed">
+    <div className={scrollPosition>0 ?
+     "flex justify-between items-center w-full h-20 px-4 text-b2 bg-cyan fixed" 
+     :
+     "flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-b from-b2 to-b1 duration-300 fixed"}>
         <div>
-            <img src={require("../assets/logo.png")} width="75"/>
+            {scrollPosition>0 ? <img src={logo2} width="75"/> : <img src={logo} width="75"/>}
         </div>      
         <ul className='hidden md:flex'>
             {links.map((link)=>(
                 <li
                  key={link.id} 
-                 className='px-4 cursor-pointer text-cyan capitalize'
+                 className='px-4 cursor-pointer capitalize'
                 >
                     {link.link}
                 </li>
             ))}
         </ul>
 
-        <div onClick={()=> setNav(!nav)} className='cursor-pointer pr-4 z-10 text-cyan md:hidden'>
+        <div onClick={()=> setNav(!nav)} className= {scrollPosition>0? 'cursor-pointer pr-4 z-10 text-b1 md:hidden' : 'cursor-pointer pr-4 z-10 text-cyan md:hidden'}>
             {nav? <FaTimes size={30}/>: <FaBars size={30}/>}
         </div>
 
