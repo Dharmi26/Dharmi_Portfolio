@@ -9,6 +9,8 @@ module.exports = {
         'cyan':'#DAEAF1',
         'g1':'#EF4765',
         'g2':'#FF9A5A',
+        'f1':'#E55D87',
+        'f2':'#5FC3E4',
       },
     },
   },
