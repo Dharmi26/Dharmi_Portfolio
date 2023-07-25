@@ -27,8 +27,8 @@ const Home = () => {
       className="w-full pt-40 pb-32 bg-gradient-to-b from-b1 to-b2"
     >
       <div className=" max-w-screen-lg mx-auto flex flex-col-reverse md:flex-row items-center justify-center h-full px-4">
-        <div data-aos="fade-right" data-aos-delay="400" className="flex flex-col justify-center items-center sm:items-start h-full pt-6">
-          <h2 className="text-4xl sm:text-4xl font-bold text-cyan">
+        <div data-aos="fade-right" data-aos-delay="400" className="flex flex-col items-center md:items-start h-full pt-6">
+          <h2 className="text-4xl sm:text-4xl font-bold text-cyan text-center md:text-start">
             Hi, I am Dharmi Kapadiya
           </h2>
           <h3 className="py-4 sm:text-xl text-blue-50">
