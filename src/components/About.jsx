@@ -36,6 +36,9 @@ const About = () => {
         <p data-aos="zoom-in" data-aos-delay="200" className="text-xl mt-20">
             I am a student, currently pursuing Bachelor of Technology in Computer Science Branch from SKIT Jaipur. I'm a web developer passionate about building innovative and user-friendly websites and applications. I am eager to collaborate with like-minded professionals and take on new challenges in web development to continue growing my skills and expertise.
         </p>
+        <p data-aos="zoom-in" data-aos-delay="200" className="text-xl mt-10">
+          I am an enthusiastic individual who strongly believes in the value of combining hard work with smart strategies. My passion for my work drives me to approach every task and project with unwavering dedication. I have a keen interest in continuous learning, constantly exploring new ideas, and I thrive on embracing innovation.
+        </p>
       </div>
     </div>
   )
