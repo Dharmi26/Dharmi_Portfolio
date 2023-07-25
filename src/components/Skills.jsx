@@ -59,9 +59,9 @@ const Skills = () => {
       name="skills"
       className="bg-gradient-to-b from-b1 to-b2 w-full"
     >
-      <div className="max-w-screen-lg pt-20 mx-auto p-4 flex flex-col justify-center w-full h-full text-cyan">
+      <div className="max-w-screen-lg p-4 pt-20 pb-20 mx-auto flex flex-col justify-center w-full h-full text-cyan">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+          <p className="text-4xl font-bold border-b-4 border-gray-500 inline">
             Skills
           </p>
           <p className="py-6 text-white">These are the technologies I've worked with</p>

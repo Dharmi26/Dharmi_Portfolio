@@ -17,7 +17,7 @@ const Contact = () => {
         </div>
         <div className="flex flex-col justify-center items-center gap-4">
 
-          <div className="w-[40%]"><img src={connect}/></div>
+          <div className="w-[60%] md:w-[40%]"><img src={connect}/></div>
 
           <div className="w-full flex justify-center items-center">
           <form

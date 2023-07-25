@@ -3,6 +3,7 @@ import {FaBars, FaTimes} from 'react-icons/fa';
 import { useScrollPosition } from './useScrollPosition';
 import logo from '../assets/logo.png';
 import logo2 from '../assets/logo2.png';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
 
@@ -35,9 +36,9 @@ const Navbar = () => {
 
   return (
     <div className={scrollPosition>0 ?
-     "flex justify-between items-center w-full h-20 px-4 text-b2 bg-cyan fixed" 
+     "flex justify-between items-center w-full h-20 px-4 text-b2 bg-cyan fixed z-10" 
      :
-     "flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-b from-b2 to-b1 duration-300 fixed"}>
+     "flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-b from-b2 to-b1 duration-300 fixed z-10"}>
         <div>
             {scrollPosition>0 ? <img src={logo2} width="75"/> : <img src={logo} width="75"/>}
         </div>      
@@ -47,7 +48,7 @@ const Navbar = () => {
                  key={link.id} 
                  className='px-4 cursor-pointer capitalize'
                 >
-                    {link.link}
+                 <Link to={link.link} smooth duration={500}>{link.link}</Link>
                 </li>
             ))}
         </ul>
