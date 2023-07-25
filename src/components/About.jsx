@@ -25,10 +25,10 @@ const About = () => {
 
     <div
       name="about"
-      className="w-full h-screen px-2 bg-cyan text-blue-950"
+      className="w-full pt-20 pb-20 px-2 bg-cyan text-blue-950"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-4">
+        <div>
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
