@@ -12,7 +12,8 @@ const Hackathon = () => {
       'company':'Smart India Hackathon',
       'location':'Sage University, Indore',
       'duration':'August 2022',
-      'description':'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ',
+      'description':'Developed a solution for Self Help Groups to sell niche products and for  transparent buyer seller interactions.',
+      'certificate':'https://drive.google.com/file/d/18LHEKD5xUndDb2DzfbkUh-KVlxBQWUNA/view'
     },
     {
       'logo':techathon,
@@ -20,7 +21,8 @@ const Hackathon = () => {
       'company':'Tech-a-Thon 2.0',
       'location':'JECRC University, Jaipur',
       'duration':'September 2022',
-      'description':'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ',
+      'description':'Created a Notes Sharing Application where students can share the notes private to their univerity or publicly.',
+      'certificate':'https://drive.google.com/file/d/1jnSXbA7WY9KG7nMUnHR7fTkWM99rz-tk/view'
     },
     {
       'logo':codered,
@@ -28,7 +30,8 @@ const Hackathon = () => {
       'company':'CodeRed Hackathon 2.0',
       'location':'VGU Jaipur',
       'duration':'October 2022',
-      'description':'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ',
+      'description':'Developed a model for Farming communities and companies to buy the crops for production.',
+      'certificate':'https://drive.google.com/file/d/1jktM4tPiltZZkDY1XGjHnFFfYmOih9mN/view'
     },
   ]
   
@@ -41,7 +44,8 @@ const Hackathon = () => {
             company={hackathon.company}
             location={hackathon.location}
             duration={hackathon.duration}
-            description={hackathon.description}/>
+            description={hackathon.description}
+            certificate={hackathon.certificate}/>
         ))}
         
       </div>

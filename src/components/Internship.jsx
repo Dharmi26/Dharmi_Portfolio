@@ -10,7 +10,8 @@ const Internship = () => {
       'company':'IBM SkillsBuild',
       'location':'Remote',
       'duration':'June 2023 - July 2023',
-      'description':'lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem ',
+      'description':'Worked on Weather Prediction website using HTML, CSS and Javascript.',
+      'certificate':'#'
     },
   ]
   
@@ -23,7 +24,8 @@ const Internship = () => {
             company={intern.company}
             location={intern.location}
             duration={intern.duration}
-            description={intern.description}/>
+            description={intern.description}
+            certificate={intern.certificate}/>
         ))}
         
       </div>
