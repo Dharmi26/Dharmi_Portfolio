@@ -1,6 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration:"1000"
+    });
+  }, [])
   return (
     // <div name="about"
     // className="w-full pb-28 bg-gradient-to-b from-b2 to-b1">
@@ -26,7 +33,7 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p data-aos="zoom-in" data-aos-delay="200" className="text-xl mt-20">
             I am a student, currently pursuing Bachelor of Technology in Computer Science Branch from SKIT Jaipur. I'm a web developer passionate about building innovative and user-friendly websites and applications. I am eager to collaborate with like-minded professionals and take on new challenges in web development to continue growing my skills and expertise.
         </p>
       </div>

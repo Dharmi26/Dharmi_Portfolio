@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {AiOutlineDownload} from 'react-icons/ai';
 import HeroImage from "../assets/heroimg.jpg";
 import { Link } from "react-scroll";
@@ -6,19 +6,28 @@ import resume from "../assets/resume.pdf"
 import {BiLogoGmail} from 'react-icons/bi';
 import {AiFillLinkedin} from 'react-icons/ai';
 import {AiFillGithub} from 'react-icons/ai';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const downloadResume = () => {
   window.open(resume, '_blank');
 }; 
 
 const Home = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration:"1000"
+    });
+  }, [])
+
   return (
     <div
       name="home"
       className="w-full pt-40 pb-32 bg-gradient-to-b from-b1 to-b2"
     >
       <div className=" max-w-screen-lg mx-auto flex flex-col-reverse md:flex-row items-center justify-center h-full px-4">
-        <div className="flex flex-col justify-center h-full pt-6">
+        <div data-aos="fade-right" data-aos-delay="400" className="flex flex-col justify-center h-full pt-6">
           <h2 className="text-4xl sm:text-4xl font-bold text-cyan">
             Hi, I am Dharmi Kapadiya
           </h2>
@@ -45,7 +54,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-delay="500">
           <img
             src={HeroImage}
             alt="my profile"

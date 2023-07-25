@@ -1,4 +1,6 @@
-import React from "react";
+import React,{useEffect} from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import html from "../assets/skills/html.png";
 import css from "../assets/skills/css.png";
@@ -54,6 +56,12 @@ const Skills = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration:"1000"
+    });
+  }, [])
+
   return (
     <div
       name="skills"
@@ -64,12 +72,14 @@ const Skills = () => {
           <p className="text-4xl font-bold border-b-4 border-gray-500 inline">
             Skills
           </p>
-          <p className="py-6 text-white">These are the technologies I've worked with</p>
+          <p data-aos="fade-right" data-aos-delay="200" className="py-6 text-white">These are the technologies I've worked with</p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8  px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
+              data-aos="zoom-in"
+              data-aos-delay="500"
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >

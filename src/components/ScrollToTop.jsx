@@ -22,8 +22,8 @@ const ScrollToTop = () => {
     };
 
     return (
-        <button className={`fixed bottom-4 right-4 ${isVisible? 'opacity-100' : 'opacity-0'}`} onClick={goTop}>
-            <BsFillArrowUpCircleFill size="50px" color="#7795CB"/>
+        <button className={`animate-bounce duration-100 fixed bottom-4 right-4 ${isVisible? 'opacity-100' : 'opacity-0'}`} onClick={goTop}>
+            <span className='text-purple hover:text-gray-700'><BsFillArrowUpCircleFill size="50px"/></span>
         </button>
     );
 }

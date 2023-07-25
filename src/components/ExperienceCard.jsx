@@ -1,13 +1,24 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import {SlLocationPin} from 'react-icons/sl';
 import {MdUpdate} from 'react-icons/md';
 import {GoOrganization} from 'react-icons/go';
 import {PiCertificate} from 'react-icons/pi';
 
 const ExperienceCard = (params) => {
+
+  
+  useEffect(() => {
+    AOS.init({
+      duration:"1000"
+    });
+  }, [])
+
   const {logo, title, company, location, duration, description, certificate} = params;
   return (
-    <div className='flex flex-col gap-2 bg-cyan text-blue-950 w-[250px] p-5 rounded-xl shadow-lg hover:scale-105 duration-300'>
+    <div  data-aos="zoom-in" data-aos-delay="200" className='flex flex-col gap-2 bg-cyan text-blue-950 w-[250px] p-5 rounded-xl shadow-lg hover:scale-105 duration-300'>
 
         <div className='flex flex-row items-center gap-2'>
           <div>

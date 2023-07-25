@@ -1,8 +1,17 @@
-import React from "react";
-import {MdOutlineContactMail} from "react-icons/md";
+import React,{useEffect} from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import connect from '../assets/lets-connect.webp';
 
 const Contact = () => {
+    
+  useEffect(() => {
+    AOS.init({
+      duration:"1000"
+    });
+  }, [])
+
   return (
     <div
       name="contact"
@@ -17,9 +26,9 @@ const Contact = () => {
         </div>
         <div className="flex flex-col justify-center items-center gap-4">
 
-          <div className="w-[60%] md:w-[40%]"><img src={connect}/></div>
+          <div data-aos="zoom-in-up" data-aos-delay="200" className="w-[60%] md:w-[40%]"><img src={connect}/></div>
 
-          <div className="w-full flex justify-center items-center">
+          <div data-aos="zoom-in-up" data-aos-delay="500" className="w-full flex justify-center items-center">
           <form
             action="https://getform.io/f/4682ebcf-5ccf-4f89-8d9c-5eb230f79e03"
             method="POST"
