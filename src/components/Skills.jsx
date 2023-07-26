@@ -9,6 +9,7 @@ import reactImage from "../assets/skills/react.png";
 import cplus from "../assets/skills/C++.png"
 import github from "../assets/skills/github.png";
 import tailwind from "../assets/skills/tailwind.png";
+import bootstrap from '../assets/skills/bootstrap.png';
 
 const Skills = () => {
   const techs = [
@@ -32,24 +33,30 @@ const Skills = () => {
     },
     {
       id: 4,
+      src: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-darkpurple",
+    },
+    {
+      id: 5,
       src: javascript,
       title: "JavaScript",
       style: "shadow-yellow-500",
     },
     {
-      id: 5,
+      id: 6,
       src: reactImage,
       title: "React",
-      style: "shadow-blue-600",
-    },
-    {
-      id: 6,
-      src: tailwind,
-      title: "Tailwind",
-      style: "shadow-sky-400",
+      style: "shadow-darkcyan",
     },
     {
       id: 7,
+      src: tailwind,
+      title: "Tailwind",
+      style: "shadow-green",
+    },
+    {
+      id: 8,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
