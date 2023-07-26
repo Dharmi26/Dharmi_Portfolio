@@ -11,7 +11,7 @@ const train = [
     'title':'Full Stack Development Training',
     'company':'Devtown',
     'location':'Remote',
-    'duration':'June 2021 - Aug 2021',
+    'duration':'June 2021 - Sep 2021',
     'description':'Learnt Frontend and Backend web development technologies.',
     'certificate':'https://drive.google.com/file/d/1vAcQlyY7D1BHcj2pvnvGDq6p2aIXK1Cg/view'
   },
@@ -20,7 +20,7 @@ const train = [
     'title':'Basics of Data Science',
     'company':'Internshala',
     'location':'Remote',
-    'duration':'June 2022 - Aug 2022',
+    'duration':'June 2022 - July 2022',
     'description':'Learnt Basics of Data Science, Machine Learning and Python.',
     'certificate':'https://drive.google.com/file/d/1m4nvDd9d3sNDKFoyJE2x6X1Z8DlFsh-l/view?usp=sharing'
   },
