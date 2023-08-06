@@ -10,6 +10,7 @@ import cplus from "../assets/skills/C++.png"
 import github from "../assets/skills/github.png";
 import tailwind from "../assets/skills/tailwind.png";
 import bootstrap from '../assets/skills/bootstrap.png';
+import mern from '../assets/skills/mern.webp';
 
 const Skills = () => {
   const techs = [
@@ -57,6 +58,12 @@ const Skills = () => {
     },
     {
       id: 8,
+      src: mern,
+      title: "MERN",
+      style: "shadow-pink-400",
+    },
+    {
+      id: 9,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
