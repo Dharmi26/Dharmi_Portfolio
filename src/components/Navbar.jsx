@@ -36,12 +36,12 @@ const Navbar = () => {
    const scrollPosition = useScrollPosition();
 
   return (
-    <div className={scrollPosition>0 ?
+    <div className={window.scrollY>=window.innerHeight?
      "flex justify-between items-center w-full h-20 px-4 text-b2 bg-cyan fixed z-10" 
      :
-     "flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-b from-b2 to-b1 duration-300 fixed z-10"}>
+     "flex justify-between items-center w-full h-20 px-4 text-white bg-transparent duration-300 fixed z-10"}>
         <div>
-            {scrollPosition>0 ? <img src={logo2} width="75"/> : <img src={logo} width="75"/>}
+            {window.scrollY>=window.innerHeight>0 ? <img src={logo2} width="75"/> : <img src={logo} width="75"/>}
         </div>      
         <ul className='hidden md:flex'>
             {links.map((link)=>(
