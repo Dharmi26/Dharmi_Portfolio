@@ -11,12 +11,12 @@ const Internship = () => {
       'location':'Remote',
       'duration':'June 2023 - July 2023',
       'description':'Worked on Weather Prediction website using HTML, CSS and Javascript.',
-      'certificate':'#'
+      'certificate':'https://drive.google.com/file/d/1kObx7mq4QSxwgWOxYM80lXemqWeLaVR_/view?usp=sharing'
     },
   ]
   
     return (
-      <div className='flex flex-row flex-wrap justify-center sm:justify-start gap-5 w-full'>
+      <div  data-aos="zoom-in" data-aos-delay="200" className='flex flex-row flex-wrap justify-center sm:justify-start gap-5 w-full'>
         {intern.map((intern)=>(
           <ExperienceCard 
             logo={intern.logo}

@@ -36,7 +36,7 @@ const Hackathon = () => {
   ]
   
     return (
-      <div className='flex flex-row flex-wrap justify-center sm:justify-start gap-5 w-full'>
+      <div  data-aos="zoom-in" data-aos-delay="200" className='flex flex-row flex-wrap justify-center sm:justify-start gap-5 w-full'>
         {hackathons.map((hackathon)=>(
           <ExperienceCard 
             logo={hackathon.logo}

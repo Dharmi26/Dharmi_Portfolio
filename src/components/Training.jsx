@@ -27,7 +27,7 @@ const train = [
 ]
 
   return (
-    <div className='flex flex-row flex-wrap justify-center sm:justify-start gap-5 w-full'>
+    <div  data-aos="zoom-in" data-aos-delay="200" className='flex flex-row flex-wrap justify-center sm:justify-start gap-5 w-full'>
       {train.map((train)=>(
         <ExperienceCard 
           logo={train.logo}

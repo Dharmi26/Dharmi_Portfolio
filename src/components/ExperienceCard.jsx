@@ -18,7 +18,7 @@ const ExperienceCard = (params) => {
 
   const {logo, title, company, location, duration, description, certificate} = params;
   return (
-    <div  data-aos="zoom-in" data-aos-delay="200" className='flex flex-col gap-2 bg-cyan text-blue-950 w-[250px] p-5 rounded-xl shadow-lg hover:scale-105 duration-300'>
+    <div className='flex flex-col gap-2 bg-cyan text-blue-950 w-[250px] p-5 rounded-xl shadow-lg hover:scale-105 duration-300'>
 
         <div className='flex flex-row items-center gap-2'>
           <div>
